@@ -1,0 +1,80 @@
+INFO:     Started server process [2414]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8877 (Press CTRL+C to quit)
+Initial tenant and two separate accounts created. No password is printed by the server.
+INFO:     127.0.0.1:52396 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/auth/me HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52406 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/overview HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/datasets/synthetic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/overview HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/integrations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/auth/logout HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs/1668870d-f890-4ff1-b20e-8cec73484287 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/runs/1668870d-f890-4ff1-b20e-8cec73484287/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/auth/logout HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/runs/1668870d-f890-4ff1-b20e-8cec73484287/deploy HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/resources/deployment HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/rating/56910eb9-5f46-43f6-b7d5-652be5c1e759/quote HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/resources/monitor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/datasets/synthetic HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/resources/monitor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/runs/1668870d-f890-4ff1-b20e-8cec73484287/monitor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/resources/monitor HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/runs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "POST /api/copilot HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/audit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52406 - "GET /api/users HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2414]

@@ -1,0 +1,11 @@
+{
+  "wheel": "riskiq_intelligence-0.1.0-py3-none-any.whl",
+  "cloud_calls": false,
+  "passed": true,
+  "wheel_install_no_dependencies": true,
+  "static_assets_included": true,
+  "headless_candidate_created": true,
+  "standard_library_only_scorer": true,
+  "rows_scored": 5000,
+  "scorer_output": "Scored 5000 rows; bundle status was unapproved_headless_candidate (no publication)."
+}

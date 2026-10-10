@@ -1,0 +1,10 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/riskiq-intelligence
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: riskiq-intelligence
+  Building wheel for riskiq-intelligence (pyproject.toml): started
+  Building wheel for riskiq-intelligence (pyproject.toml): finished with status 'done'
+  Created wheel for riskiq-intelligence: filename=riskiq_intelligence-0.1.0-py3-none-any.whl size=69939 sha256=5e83a1a28c4840cab846d1729a50d136c190564386f344498572479f4bdc4646
+  Stored in directory: /tmp/pip-ephem-wheel-cache-z9882pyt/wheels/b3/e3/e6/3b16672f0b6a19ab6294c3114a0464660e527290ec9edcf367
+Successfully built riskiq-intelligence

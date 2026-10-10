@@ -1,0 +1,44 @@
+{
+  "sources": {
+    "databricks_pricing": {
+      "provider": "databricks",
+      "tenants": ["demo"],
+      "host": "https://YOUR-WORKSPACE.cloud.databricks.com",
+      "warehouse_id": "YOUR_WAREHOUSE_ID",
+      "token_env": "RISKIQ_SOURCE_DATABRICKS_TOKEN",
+      "tables": ["catalog.pricing.portfolio"]
+    },
+    "snowflake_pricing": {
+      "provider": "snowflake",
+      "tenants": ["demo"],
+      "host": "https://YOUR-ACCOUNT.snowflakecomputing.com",
+      "token_env": "RISKIQ_SOURCE_SNOWFLAKE_TOKEN",
+      "token_type": "OAUTH",
+      "warehouse": "PRICING_WH",
+      "role": "PRICING_READONLY",
+      "tables": ["PRICING.PUBLIC.PORTFOLIO"]
+    },
+    "foundry_pricing": {
+      "provider": "palantir",
+      "tenants": ["demo"],
+      "host": "https://YOUR-ENROLLMENT.palantirfoundry.com",
+      "token_env": "RISKIQ_SOURCE_FOUNDRY_TOKEN",
+      "branch": "master",
+      "tables": ["ri.foundry.main.dataset.REPLACE-WITH-DATASET-UUID"]
+    },
+    "bigquery_pricing": {
+      "provider": "bigquery",
+      "tenants": ["demo"],
+      "project": "YOUR-GCP-PROJECT",
+      "location": "EU",
+      "maximum_bytes_billed": 1000000000,
+      "tables": ["YOUR-GCP-PROJECT.pricing.portfolio"]
+    },
+    "postgres_pricing": {
+      "provider": "postgres",
+      "tenants": ["demo"],
+      "dsn_env": "RISKIQ_SOURCE_POSTGRES_DSN",
+      "tables": ["pricing.portfolio"]
+    }
+  }
+}

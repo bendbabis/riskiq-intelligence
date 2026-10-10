@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riskiq-intelligence"
+version = "0.1.0"
+description = "Portable, governed pricing-intelligence workbench — executable reference release"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "fastapi==0.128.2", "pydantic==2.13.5", "uvicorn==0.48.0",
+  "numpy==2.3.5", "pandas==2.2.3", "scipy==1.17.0", "scikit-learn==1.8.0",
+  "SQLAlchemy==2.0.50", "argon2-cffi==25.1.0", "httpx==0.28.1", "python-multipart==0.0.29"
+]
+[project.optional-dependencies]
+test = ["pytest==9.0.2", "pytest-cov>=6,<8", "playwright==1.57.0"]
+postgres = ["psycopg[binary]>=3.2,<4"]
+gcp = ["google-cloud-bigquery>=3.30,<4"]
+parquet = ["pyarrow>=19,<24"]
+
+[project.scripts]
+riskiq = "riskiq.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["riskiq*"]
+[tool.setuptools.package-data]
+riskiq = ["static/*"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "browser": "Chromium / Playwright",
+  "steps": [
+    "local login",
+    "real synthetic dataset persisted",
+    "six persisted agent steps executed; awaiting approval",
+    "approval by a different authenticated person",
+    "internal API deployment and actual quote",
+    "outcome A/E and drift on a distinct synthetic snapshot",
+    "second loop linked to the deployed parent",
+    "grounded read-only deterministic copilot",
+    "audit hash chain verified and user registry displayed"
+  ],
+  "page_errors": [],
+  "data": "synthetic only; isolated temporary DB",
+  "cloud_connections_tested": false,
+  "transport": "Python bridge to real HTTP API; not direct browser network"
+}
